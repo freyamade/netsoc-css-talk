@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Materialize Slidez</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/my.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Materialize -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+        <!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <!-- Title Slide -->
+				<section>
+                    <div class="card white z-depth-5">
+                        <div class="card-image">
+                            <img src="img/title.png" alt="Materialize Get Started">
+                            <span class="card-title">CSS Frameworks / Materialize CSS</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Ciaran Broderick, NetSoc SysAdmin</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- What is HTML / CSS -->
+				<section>
+                    <!-- Root -->
+                    <section>
+                        <div class="card deep-purple lighten-1 z-depth-5">
+                            <div class="card-image">
+                                <img src="https://i.ytimg.com/vi/FGMD41faCSs/maxresdefault.jpg" alt="HTML5, CSS3 and JS6" />
+                            </div>
+                            <div class="card-content white-text">
+                                But what is HTML / CSS?
+                            </div>
+                        </div>
+                    </section> <!-- /root -->
+
+                    <!-- HTML -->
+                    <section>
+                        <div class="card deep-purple lighten-1 z-depth-5">
+                            <div class="card-content white-text">
+                                <p>HTML</p>
+                                <pre><code data-trim>
+                                    &lt;!DOCTYPE html&gt;
+                                    &lt;html lang="en"&gt;
+                                        &lt;head&gt;
+                                            &lt;meta charset="utf-8" /&gt;
+                                            &lt;title&gt;My First Webpage&lt;/title&gt;
+                                        &lt;/head&gt;
+
+                                        &lt;body&gt;
+                                            &lt;h1&gt;Welcome to my first webpage!&lt;/h1&gt;
+                                        &lt;/body&gt;
+                                    &lt;/html&gt;
+                                </code></pre>
+                            </div>
+                            <div class="card-action">
+                                <a class="white-text" href="examples/1.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </section> <!-- /html -->
+
+                    <!-- CSS -->
+                    <section>
+                        <div class="card deep-purple lighten-1 z-depth-5">
+                            <div class="card-content white-text">
+                                <p>CSS</p>
+                                <pre><code data-trim>
+                                    body {
+                                        background-color: #ee6e73;
+                                        color: black;
+                                        font-family: monospace;
+                                    }
+
+                                    h1 {
+                                        color: white;
+                                    }
+                                </code></pre>
+                            </div>
+                            <div class="card-action">
+                                <a class="white-text" href="examples/2.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </section> <!-- /css -->
+                </section><!-- /what-is -->
+
+                <!-- More Complex Example -->
+                <section>
+                    <div class="card deep-purple lighten-1 z-depth-5">
+                        <div class="card-content white-text">
+                            <p>Let's add some content!</p>
+                            <pre><code data-trim>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html lang="en"&gt;
+                                    &lt;head&gt;
+                                        &lt;meta charset="utf-8" /&gt;
+                                        &lt;title&gt;My Third Webpage&lt;/title&gt;
+                                        &lt;!-- I removed the style --&gt;
+                                    &lt;/head&gt;
+
+                                    &lt;body&gt;
+                                        &lt;h1&gt;Welcome to my first webpage!&lt;/h1&gt;
+
+                                        &lt;h2&gt;About Me&lt;/h2&gt;
+                                        &lt;ul&gt;
+                                            &lt;li&gt;My name is Ciaran&lt;/li&gt;
+                                            &lt;li&gt;I'm in my 4th year of Computer Science&lt;/li&gt;
+                                            &lt;li&gt;I am the best SysAdmin in NetSoc&lt;/li&gt;
+                                        &lt;/ul&gt;
+
+                                        &lt;h2&gt;Contact Me&lt;/h2&gt;
+                                        &lt;form&gt;
+                                            &lt;label for="name"&gt;Name: &lt;/label&gt;
+                                            &lt;input type="text" id="name" name="name" /&gt;
+                                            &lt;label for="msg"&gt;Your Message: &lt;/label&gt;
+                                            &lt;textarea name="msg" id="msg"&gt;&lt;/textarea&gt;
+                                            &lt;input type="submit" /&gt;
+                                        &lt;/form&gt;
+                                    &lt;/body&gt;
+                                &lt;/html&gt;
+                                </code></pre>
+                        </div>
+                        <div class="card-action">
+                            <a class="white-text" href="examples/3.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                        </div>
+                    </div>
+                </section> <!-- /complex -->
+
+                <!-- Frameworks -->
+                <section>
+                    <!-- Overview -->
+                    <section>
+                        <div class="card white z-depth-5">
+                            <div class="card-content">
+                                <p>CSS Frameworks</p>
+                                <hr />
+                                <div class="row">
+                                    <div class="col s12">
+                                        <small class="fragment">What is a CSS Framework?</small>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="card-panel z-depth-1 fragment">
+                                            A collection of files that makes it far easier to style your website
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <aside class="notes">
+                            Mention that it makes it easier to style the website, and most of them also provide grid layouts and assistance with mobile websites
+                        </aside>
+                    </section> <!-- /overview -->
+
+                    <!-- Strapless -->
+                    <section>
+                        <div class="card white z-depth-5">
+                            <div class="card-image">
+                                <img src="img/strapless.png" alt="Strapless CSS" />
+                            </div>
+                            <div class="card-content">
+                                <a href="http://www.strapless.io/" target="_blank">Strapless</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Bootstrap -->
+                    <section>
+                        <div class="card white z-depth-5">
+                            <div class="card-image">
+                                <img src="img/bootstrap.png" alt="Bootstrap CSS" />
+                            </div>
+                            <div class="card-content">
+                                <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                            </div>
+                        </div>
+                    </section> <!-- /boostrap -->
+
+                    <!-- Materialize -->
+                    <section>
+                        <div class="card white z-depth-5">
+                            <div class="card-image">
+                                <img src="img/title.png" alt="Bootstrap CSS" />
+                            </div>
+                            <div class="card-content">
+                                <a href="http://materializecss.com/" target="_blank">Materialize CSS (The Best One)</a>
+                            </div>
+                        </div>
+                    </section> <!-- /materialize -->
+                </section> <!-- /frameworks -->
+
+                <!-- Let's Add Materialize -->
+                <section>
+                    <section><!-- Add the necessary libraries -->
+                        <div class="card deep-purple lighten-1 z-depth-5">
+                            <div class="card-content white-text">
+                                <p>Add the necessary Scripts / Stylesheets</p>
+                                <pre><code data-trim>
+                                    ...
+                                    &lt;head&gt;
+                                        &lt;!-- Let browser know website is optimized for mobile --&gt;
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+                                        &lt;!-- Import Google Icon Font --&gt;
+                                        &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                                              rel="stylesheet" /&gt;
+                                        &lt;!-- Import materialize.css --&gt;
+                                        &lt;link type="text/css"
+                                              rel="stylesheet"
+                                              href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+                                              media="screen,projection"/&gt;
+                                        &lt;title&gt;My Fourth Webpage&lt;/title&gt;
+                                    &lt;/head&gt;
+
+                                    &lt;body&gt;
+                                        ...
+                                        &lt;!-- Import jQuery --&gt;
+                                        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;
+                                        &lt;!-- Import materialize.js --&gt;
+                                        &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"&gt;&lt;/script&gt;
+                                    &lt;/body&gt;
+                                    ...
+                                </code></pre>
+                            </div>
+                            <div class="card-action">
+                                <a class="white-text" href="examples/4.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </section> <!-- /add_libraries -->
+
+                    <section> <!-- Add a title bar -->
+                        <div class="card deep-purple lighten-1 z-depth-5">
+                            <div class="card-content white-text">
+                                <p>Let's add a title bar</p>
+                                <pre><code data-trim>
+                                    &lt;body&gt;
+                                        &lt;nav class="blue lighten-1"&gt;
+                                            &lt;div class="nav-wrapper container"&gt;
+                                                &lt;a href="#" class="brand-logo center"&gt;My First Site&lt;/a&gt;
+                                            &lt;/div&gt;
+                                        &lt;/nav&gt;
+                                        ...
+                                    &lt;/body&gt;
+                                </code></pre>
+                            </div>
+                            <div class="card-action">
+                                <a class="white-text" href="examples/5.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </section> <!-- /title_bar -->
+
+                    <section> <!-- What's a Grid -->
+                        <div class="card deep-purple lighten-1 z-depth-5">
+                            <div class="card-content white-text">
+                                <p>So what's a grid?</p>
+                                <pre><code data-trim>
+                                    &lt;div class="row"&gt;
+                                        &lt;div class="col s12 m6 l4"&gt;
+                                            ...
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                </code></pre>
+                            </div>
+                            <div class="card-action">
+                                <a class="white-text" href="http://materializecss.com/grid.html#grid-intro" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </section> <!-- /what_is_grid -->
+
+                    <section> <!-- Grids in action -->
+                        <div class="card deep-purple lighten-1 z-depth-5">
+                            <div class="card-content white-text">
+                                <p>Let's see it in action!</p>
+                                <pre><code data-trim>
+                                    ... &lt;!-- Navbar --&gt;
+                                    &lt;div class="row"&gt;
+                                        &lt;div class="col s6"&gt;
+                                            &lt;h2&gt;About Me&lt;/h2&gt;
+                                            ...
+                                        &lt;/div&gt;
+                                    
+                                        &lt;div class="col s6"&gt;
+                                            &lt;h2&gt;Contact Me&lt;/h2&gt;
+                                            ...
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    ... &lt;!-- Scripts --&gt;
+                                </code></pre>
+                            </div>
+                            <div class="card-action">
+                                <a class="white-text" href="examples/6.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </section> <!-- /grids_in_action -->
+                </section> <!-- add_materialize -->
+
+                <!-- Screen Sizes -->
+                <section>
+                    <div class="card deep-purple lighten-1 z-depth-5">
+                        <div class="card-content white-text">
+                            <p>Screen Sizes</p>
+                            <pre><code data-trim>
+                                ... &lt;!-- Navbar --&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class="col s12 m6"&gt;
+                                        &lt;h2&gt;About Me&lt;/h2&gt;
+                                        ... &lt;!-- About me List --&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="col s12 m6"&gt;
+                                        &lt;h2&gt;Contact Me&lt;/h2&gt;
+                                        ... &lt;!-- Contact Form --&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                ... &lt;!-- Scripts --&gt;
+                            </code></pre>
+                        </div>
+                        <div class="card-action">
+                            <a class="white-text" href="examples/7.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                        </div>
+                    </div>
+                </section> <!-- /screen_sizes -->
+                
+                <!-- Make it look nice :) -->
+                <section>
+                    <section> <!-- Materialize Cards -->
+                        <div class="card white z-depth-5">
+                            <div class="card-content">
+                                <p>Cards / Panels</p>
+                                <pre><code data-trim>
+                                    ... &lt;!-- Navbar --&gt;
+                                    &lt;div class="row"&gt;
+                                        &lt;div class="col s12 m6"&gt;
+                                            &lt;div class="card"&gt;
+                                                &lt;div class="card-content"&gt;
+                                                    &lt;div class="card-title"&gt;
+                                                        About Me
+                                                    &lt;/div&gt;
+                                                    ... &lt;!-- About me list --&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="col s12 m6"&gt;
+                                            &lt;div class="card"&gt;
+                                                &lt;div class="card-content"&gt;
+                                                    &lt;div class="card-title"&gt;
+                                                        Contact Me
+                                                    &lt;/div&gt;
+                                                    ... &lt;!-- Contact Form --&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                    ... &lt;!-- Scripts --&gt;
+                                </code></pre>
+                            </div>
+                            <div class="card-action">
+                                <a class="deep-purple-text" href="examples/8.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </section> <!-- /cards -->
+
+                    <section> <!-- Collections -->
+                        <div class="card white z-depth-5">
+                            <div class="card-content">
+                                <p>Collections / List Groups</p>
+                                <pre><code data-trim>
+                                    ... &lt;!-- Open Card --&gt;
+                                    &lt;div class="card-title"&gt;
+                                        About Me
+                                    &lt;/div&gt;
+                                    &lt;ul class="collection"&gt;
+                                        &lt;li class="collection-item"&gt;My name is Ciaran&lt;/li&gt;
+                                        ... &lt;!-- Other list items --&gt;
+                                    &lt;/ul&gt;
+                                    ... &lt;!-- Close Card --&gt;
+                                </code></pre>
+                            </div>
+                            <div class="card-action">
+                                <a class="deep-purple-text" href="examples/9.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </section> <!-- /collections -->
+
+                    <section> <!-- Final Touches -->
+                        <div class="card white z-depth-5">
+                            <div class="card-content">
+                                <p>Finishing Touches</p>
+                                <pre><code data-trim>
+                                    &lt;div class="input-field"&gt;
+                                        &lt;label for="name"&gt;Name: &lt;/label&gt;
+                                        &lt;input type="text" id="name" name="name" /&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="input-field"&gt;
+                                        &lt;label for="msg"&gt;Your Message: &lt;/label&gt;
+                                        &lt;textarea name="msg" id="msg" class="materialize-textarea"&gt;&lt;/textarea&gt;
+                                    &lt;/div&gt;
+                                    &lt;input type="submit" class="btn" /&gt;
+                                </code></pre>
+                            </div>
+                            <div class="card-action">
+                                <a class="deep-purple-text" href="examples/final.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                            </div>
+                        </div>
+                    </section> <!-- /final_touches -->
+                </section> <!-- /nice_looks -->
+
+                <section> <!-- Any questions -->
+                    <div class="card white z-depth-5">
+                        <div class="card-image">
+                            <img src="https://media.giphy.com/media/l0Iy8hSJalxmgTOF2/giphy.gif" alt="Questions?">
+                        </div>
+                        <div class="card-content">
+                            <p>Any Questions?</p>
+                        </div>
+                    </div>
+                </section> <!-- /end_questions -->
+
+                <section>
+                    <div class="card deep-purple lighten-1 z-depth-5">
+                        <div class="card-image">
+                            <img src="https://coffeeconnectionhilliard.files.wordpress.com/2016/05/thank-you-1400x800-c-default.gif" alt="Thanks a bunch!">
+                            <span class="card-title">Thank You!</span>
+                        </div>
+                        <div class="card-content white-text">
+                            <p>crnlpanic.netsoc.co/techtalks/css</p>
+                        </div>
+                    </div>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+        <script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+                controls: true,
+                history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

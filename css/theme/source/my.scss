@@ -1,0 +1,44 @@
+/**
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/materialize_settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic);
+
+.card-content {
+  color: $headingColor;
+}
+
+.reveal section .card .card-image img {
+  max-height: 100%;
+  max-width: 100%;
+  border: 0;
+  margin: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.reveal pre code {
+  font-family: "Ubuntu Mono", sans-serif;
+}
+
+.reveal a.btn-flat {
+  font: 15px 'Lato', sans-serif;
+}
+
+.reveal .controls .navigate-left {
+  right: 74px;
+}
+
+// Theme template ------------------------------
+@import "../template/materialize_theme";
+// ---------------------------------------------
