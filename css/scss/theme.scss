@@ -5,8 +5,8 @@
 
 
 // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/materialize_settings";
+@import "./mixins";
+@import "./settings";
 // ---------------------------------------------
 
 
@@ -40,5 +40,5 @@
 }
 
 // Theme template ------------------------------
-@import "../template/materialize_theme";
+@import "./base-theme";
 // ---------------------------------------------
