@@ -1,19 +1,16 @@
 /**
- * Solarized Dark theme for reveal.js.
- * Author: Achim Staebler
+ * crnbrdrck theme for reveal.js
+ * Author: crnbrdrck
  */
 
+ // Include theme-specific fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic");
 
 // Default mixins and settings -----------------
 @import "./mixins";
 @import "./settings";
 // ---------------------------------------------
-
-
-
-// Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic);
 
 .card-content {
   color: $headingColor;
@@ -32,7 +29,7 @@
 }
 
 .reveal a.btn-flat {
-  font: 15px 'Lato', sans-serif;
+  font: 15px 'Raleway', sans-serif;
 }
 
 .reveal .controls .navigate-left {
