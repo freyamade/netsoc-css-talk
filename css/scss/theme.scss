@@ -36,6 +36,27 @@
   right: 74px;
 }
 
+.card.light {
+    background-color: $mainColor !important;
+    color: $backgroundColor !important;
+}
+
+.card.dark {
+    color: $mainColor !important;
+    background-color: $backgroundColor !important;
+    & ::selection {
+        color: $selectionBackgroundColor;
+        background: $selectionColor;
+        text-shadow: none;
+    }
+
+    & ::-moz-selection {
+        color: $selectionBackgroundColor;
+        background: $selectionColor;
+        text-shadow: none;
+    }
+}
+
 // Theme template ------------------------------
 @import "./base-theme";
 // ---------------------------------------------

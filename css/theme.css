@@ -23,6 +23,22 @@
 .reveal .controls .navigate-left {
   right: 74px; }
 
+.card.light {
+  background-color: #d4def6 !important;
+  color: #002366 !important; }
+
+.card.dark {
+  color: #d4def6 !important;
+  background-color: #002366 !important; }
+  .card.dark ::selection {
+    color: #6A81AE;
+    background: #002366;
+    text-shadow: none; }
+  .card.dark ::-moz-selection {
+    color: #6A81AE;
+    background: #002366;
+    text-shadow: none; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
