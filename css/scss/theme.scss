@@ -44,6 +44,9 @@
 .card.dark {
     color: $mainColor !important;
     background-color: $backgroundColor !important;
+    & .card-content {
+        color: $mainColor !important;
+    }
     & ::selection {
         color: $selectionBackgroundColor;
         background: $selectionColor;
