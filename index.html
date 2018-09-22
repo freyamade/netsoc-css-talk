@@ -190,6 +190,229 @@
                 <!-- /Part 2 -->
 
                 <!-- Part 3; Example -->
+                <section>
+                    <div class="card light z-depth-5">
+                        <div class="card-content">
+                            <table class="table">
+                                <tr class="fragment">
+                                    <td>Small "About Me" website.</td>
+                                </tr>
+                                <tr class="fragment">
+                                    <td>Contains basic details about myself.</td>
+                                </tr>
+                                <tr class="fragment">
+                                    <td>Provides a contact form.</td>
+                                </tr>
+                                <tr class="fragment">
+                                    <td>Has to look nice. <small style="vertical-align: baseline;" class="fragment">(I'm shallow like that)</small></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="card-action">
+                            <p>An Example Website</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                        <div class="card light z-depth-5">
+                            <div class="card-content">
+                                <p>Step 1. HTML only</p>
+                                <pre><code data-trim>
+                                    &lt;!DOCTYPE html&gt;
+                                    &lt;html lang="en"&gt;
+                                        &lt;head&gt;
+                                            &lt;title&gt;All about Ciaran Broderick&lt;/head&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;h1&gt;Ciaran Broderick&lt;/h1&gt;
+                                            &lt;blockquote&gt;"Ciaran Broderick is one of the coolest people you'll ever meet. You should try and hang out with them whenever you can and also give them pizza" - Ciaran's Mom&lt;/blockquote&gt;
+                                            &lt;h2&gt;Education&lt;/h2&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;BSc Computer Science, UCC&lt;/li&gt;
+                                                &lt;li&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
+                                                &lt;li&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                            &lt;h2&gt;Work Experience&lt;/h2&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
+                                                &lt;li&gt;Programmer, in general&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                            &lt;h2&gt;Contact Me&lt;/h2&gt;
+                                            &lt;form&gt;
+                                                &lt;label for="name"&gt;Your Name:&lt;/label&gt;&lt;input type="text" id="name" name="name" /&gt;
+                                                &lt;label for="message"&gt;Message:&lt;/label&gt;&lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+                                                &lt;input type="submit" /&gt;
+                                            &lt;/form&gt;
+                                        &lt;/body&gt;
+                                    &lt;/html&gt;
+                                </code></pre>
+                            </div>
+                            <a href="examples/1.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="card light z-depth-5">
+                            <div class="card-content">
+                                <p>Step 2. Let's add Bulma</p>
+                                <pre><code data-trim>
+                                    &lt;head&gt;
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                                        &lt;title&gt;All about Ciaran Broderick&lt;/title&gt;
+                                        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"&gt;
+                                    &lt;/head&gt;
+                                </code></pre>
+                            </div>
+                            <a href="examples/2.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="card light z-depth-5">
+                            <div class="card-content">
+                                <p>Step 3. Titles</p>
+                                <pre><code data-trim>
+                                    &lt;h1 class="title"&gt;Ciaran Broderick&lt;/h1&gt;
+                                    ...
+                                    &lt;h2 class="title"&gt;Education&lt;/h2&gt;
+                                    ...
+                                    &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
+                                    ...
+                                    &lt;h2 class="title"&gt;Contact Me&lt;/h2&gt;
+                                    ...
+                                </code></pre>
+                            </div>
+                            <a href="examples/3.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="card light z-depth-5">
+                            <div class="card-content">
+                                <p>Step 4. Container</p>
+                                <pre><code data-trim>
+                                    &lt;body&gt;
+                                        &lt;div class="container"&gt;
+                                            &lt;h1&gt;Ciaran Broderick&lt;/h1&gt;
+                                            ...
+                                        &lt;/div&gt;
+                                    &lt;/body&gt;
+                                </code></pre>
+                            </div>
+                            <a href="examples/4.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="card light z-depth-5">
+                            <div class="card-content">
+                                <p>Step 5. Form</p>
+                                <pre><code data-trim>
+                                    &lt;form&gt;
+                                        &lt;div class="field"&gt;
+                                            &lt;label class="label" for="name"&gt;Your Name:&lt;/label&gt;
+                                            &lt;div class="control"&gt;
+                                                &lt;input class="input" type="text" id="name" name="name" /&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="field"&gt;
+                                            &lt;label class="label" for="message"&gt;Message:&lt;/label&gt;
+                                            &lt;div class="control"&gt;
+                                                &lt;textarea class="textarea" id="message" name="message"&gt;&lt;/textarea&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;input class="button is-primary is-pulled-right" type="submit" /&gt;
+                                    &lt;/form&gt;
+                                </code></pre>
+                            </div>
+                            <a href="examples/5.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="card light z-depth-5">
+                            <div class="card-content">
+                                <p>Step 6. Content</p>
+                                <pre><code data-trim>
+                                    &lt;h1 class="title"&gt;Ciaran Broderick&lt;/h1&gt;
+                                    &lt;div class="content"&gt;
+                                        ...
+                                    &lt;/div&gt;
+                                    &lt;h2 class="title"&gt;Education&lt;/h2&gt;
+                                    &lt;div class="content"&gt;
+                                        ...
+                                    &lt;/div&gt;
+                                    &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
+                                    &lt;div class="content"&gt;
+                                        ...
+                                    &lt;/div&gt;
+                                </code></pre>
+                            </div>
+                            <a href="examples/6.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <div class="card light z-depth-5">
+                            <div class="card-content">
+                                <p>Bulma</p>
+                                <pre><code data-trim>
+                                    &lt;!DOCTYPE html&gt;
+                                    &lt;html lang="en"&gt;
+                                        &lt;head&gt;
+                                            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                                            &lt;title&gt;All about Ciaran Broderick&lt;/title&gt;
+                                            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;div class="container"&gt;
+                                                &lt;h1 class="title"&gt;Ciaran Broderick&lt;/h1&gt;
+                                                &lt;div class="content"&gt;
+                                                    &lt;blockquote&gt;"Ciaran Broderick is one of the coolest people you'll ever meet. You should try and hang out with them whenever you can and also give them pizza" - Ciaran's Mom&lt;/blockquote&gt;
+                                                &lt;/div&gt;
+                                                &lt;h2 class="title"&gt;Education&lt;/h2&gt;
+                                                &lt;div class="content"&gt;
+                                                    &lt;ul&gt;
+                                                        &lt;li&gt;BSc Computer Science, UCC&lt;/li&gt;
+                                                        &lt;li&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
+                                                        &lt;li&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+                                                &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
+                                                &lt;div class="content"&gt;
+                                                    &lt;ul&gt;
+                                                        &lt;li&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
+                                                        &lt;li&gt;Programmer, in general&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+                                                &lt;h2 class="title"&gt;Contact Me&lt;/h2&gt;
+                                                &lt;form&gt;
+                                                    &lt;div class="field"&gt;
+                                                        &lt;label class="label" for="name"&gt;Your Name:&lt;/label&gt;
+                                                        &lt;div class="control"&gt;
+                                                            &lt;input class="input" type="text" id="name" name="name" /&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="field"&gt;
+                                                        &lt;label class="label" for="message"&gt;Message:&lt;/label&gt;
+                                                        &lt;div class="control"&gt;
+                                                            &lt;textarea class="textarea" id="message" name="message"&gt;&lt;/textarea&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;input class="button is-primary is-pulled-right" type="submit" /&gt;
+                                                &lt;/form&gt;
+                                            &lt;/div&gt;
+                                        &lt;/body&gt;
+                                    &lt;/html&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                    </section>
+                </section>
             </div>
         </div>
 
