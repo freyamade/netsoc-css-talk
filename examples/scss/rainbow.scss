@@ -1,0 +1,33 @@
+// Normal CSS Works here too
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Define the colours in a map
+$stripes: (
+    "red": #F00,
+    "orange": #FF7F00,
+    "yellow": #FF0,
+    "green": #0F0,
+    "blue": #00F,
+    "indigo": #4B0082,
+    "violet": #9400D3,
+);
+
+// Define the colour bands
+.stripe {
+    height: calc(100vh / 7);
+    text-align: center;
+
+    p {
+        color: white;
+    }
+
+    // For loop for defining the colour schemes
+    @each $name, $color in $stripes {
+        &.is-#{$name} {
+            background-color: #{$color};
+        }
+    }
+}

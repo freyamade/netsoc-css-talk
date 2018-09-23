@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.stripe {
+  height: calc(100vh / 7);
+  text-align: center; }
+  .stripe p {
+    color: white; }
+  .stripe.is-red {
+    background-color: #F00; }
+  .stripe.is-orange {
+    background-color: #FF7F00; }
+  .stripe.is-yellow {
+    background-color: #FF0; }
+  .stripe.is-green {
+    background-color: #0F0; }
+  .stripe.is-blue {
+    background-color: #00F; }
+  .stripe.is-indigo {
+    background-color: #4B0082; }
+  .stripe.is-violet {
+    background-color: #9400D3; }
+
+/*# sourceMappingURL=rainbow.css.map */
