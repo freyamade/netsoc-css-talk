@@ -2,7 +2,7 @@
  * crnbrdrck theme for reveal.js
  * Author: crnbrdrck
  */
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,400italic,700italic");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic");
 .card-content {
   color: #002366; }
@@ -18,7 +18,7 @@
   font-family: "Ubuntu Mono", sans-serif; }
 
 .reveal a.btn-flat {
-  font: 15px 'Raleway', sans-serif; }
+  font: 15px 'Montserrat', sans-serif; }
 
 .reveal .controls .navigate-left {
   right: 74px; }
@@ -49,7 +49,7 @@ body {
   background-color: #002366; }
 
 .reveal {
-  font-family: "Raleway";
+  font-family: "Montserrat";
   font-size: 40px;
   font-weight: normal;
   color: #d4def6; }
@@ -80,7 +80,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #002366;
-  font-family: "Raleway";
+  font-family: "Montserrat";
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
