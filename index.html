@@ -6,71 +6,48 @@
 
         <title>CSS</title>
 
-        <!-- Materialize -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
         <link rel="stylesheet" href="css/reveal.min.css">
         <link rel="stylesheet" href="css/theme.css">
 
         <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.14.2/build/styles/railscasts.min.css">
     </head>
     <body>
         <div class="reveal">
             <div class="slides">
                 <!-- Cover Image -->
                 <section>
-                    <div class="card light z-depth-5">
-                        <div class="card-image">
-                            <img src="https://codepen.io/netsi1964/pen/QEVKzz/image/large.png" alt="CSS Is Awesome">
-                        </div>
-                    </div>
+                    <img src="https://codepen.io/netsi1964/pen/QEVKzz/image/large.png" alt="CSS Is Awesome">
                 </section>
 
                 <!-- Title Slide -->
                 <section>
-                    <div class="card light z-depth-5">
-                        <div class="card-content">
-                            <p>CSS</p>
-                            <div class="row">
-                                <div class="col s12">
-                                    <p class="fragment">How to style your own website easily by using CSS <b>other</b> people spend ages making.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-action">
-                            <p>Ciaran Broderick, SysAdmin In Spirit</p>
-                        </div>
-                    </div>
+                    <h1>CSS</h1>
+                    <p>How to style your own website easily by using CSS <b>other</b> people spend ages making.</p>
                 </section>
 
                 <!-- Roadmap -->
                 <section>
-                    <div class="card light z-depth-5">
-                        <div class="card-content">
-                            <table class="table">
-                                <tr class="fragment">
-                                    <th>Part 1</th>
-                                    <td>Intro to HTML / CSS</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <th>Part 2</th>
-                                    <td>Frameworks</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <th>Part 3</th>
-                                    <td>Examples</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <th>Part 4</th>
-                                    <td>????</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="card-action">
-                            <p>Roadmap</p>
-                        </div>
+                    <h2>Roadmap</h2>
+                    <div class="fragment">
+                        <strong>Part 1</strong>
+                        Intro to HTML / CSS
+                        <hr />
+                    </div>
+                    <div class="fragment">
+                        <strong>Part 2</strong>
+                        Frameworks
+                        <hr />
+                    </div>
+                    <div class="fragment">
+                        <strong>Part 3</strong>
+                        Examples
+                        <hr />
+                    </div>
+                    <div class="fragment">
+                        <strong>Part 4</strong>
+                        ????
+                        <hr />
                     </div>
                 </section>
 
@@ -78,56 +55,42 @@
                 <section>
                     <!-- Root -->
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-image">
-                                <img src="https://i.ytimg.com/vi/FGMD41faCSs/maxresdefault.jpg" alt="HTML5, CSS3 and JS6" />
-                            </div>
-                            <div class="card-content">
-                                1. What is HTML / CSS?
-                            </div>
-                        </div>
+                        <h2>1. What is HTML / CSS?</h2>
+                        <img src="https://i.ytimg.com/vi/FGMD41faCSs/maxresdefault.jpg" alt="HTML5, CSS3 and JS6" />
                     </section> <!-- /root -->
 
                     <!-- HTML -->
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>HTML</p>
-                                <pre><code data-trim>
-                                    &lt;!DOCTYPE html&gt;
-                                    &lt;html lang="en"&gt;
-                                        &lt;head&gt;
-                                            &lt;meta charset="utf-8" /&gt;
-                                            &lt;title&gt;My First Webpage&lt;/title&gt;
-                                        &lt;/head&gt;
+                        <h2>HTML</h2>
+                        <pre><code data-trim>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;meta charset="utf-8" /&gt;
+                                    &lt;title&gt;My First Webpage&lt;/title&gt;
+                                &lt;/head&gt;
 
-                                        &lt;body&gt;
-                                            &lt;h1&gt;Welcome to my first webpage!&lt;/h1&gt;
-                                        &lt;/body&gt;
-                                    &lt;/html&gt;
-                                </code></pre>
-                            </div>
-                        </div>
+                                &lt;body&gt;
+                                    &lt;h1&gt;Welcome to my first webpage!&lt;/h1&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code></pre>
                     </section> <!-- /html -->
 
                     <!-- CSS -->
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>CSS</p>
-                                <pre><code data-trim>
-                                    body {
-                                        background-color: #ee6e73;
-                                        color: black;
-                                        font-family: monospace;
-                                    }
+                        <h2>CSS</h2>
+                        <pre><code data-trim>
+                            body {
+                                background-color: #ee6e73;
+                                color: black;
+                                font-family: monospace;
+                            }
 
-                                    h1 {
-                                        color: white;
-                                    }
-                                </code></pre>
-                            </div>
-                        </div>
+                            h1 {
+                                color: white;
+                            }
+                        </code></pre>
                     </section> <!-- /css -->
                 </section>
                 <!-- /Part 1 -->
@@ -135,19 +98,20 @@
                 <!-- Part 2: Frameworks -->
                 <section>
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>2. CSS that other people make (Frameworks)</p>
-                                <blockquote class="fragment" cite="https://en.wikipedia.org/wiki/CSS_framework">A CSS framework is a pre-prepared software framework that is meant to allow for easier, more standards-compliant web design using the Cascading Style Sheets language.</blockquote>
-                            </div>
-                        </div>
+                        <h2>2. CSS that other people make</h2>
+                        <p class="fragment">a.k.a Frameworks</p>
+                        <blockquote style="width: 100%;" class="fragment" cite="https://en.wikipedia.org/wiki/CSS_framework">
+                            A CSS framework is a pre-prepared software framework that is meant to allow for easier, more standards-compliant web design using the Cascading Style Sheets language.
+                        </blockquote>
                     </section>
 
                     <section>
                         <div class="card light z-depth-5">
                             <div class="card-content">
-                                <p>2. CSS that other people make (Frameworks)</p>
-                                <blockquote cite="Ciaran Broderick">A CSS framework is a collection of CSS (and sometimes JS) files that make it easier to keep web pages styled consistently.</blockquote>
+                                <h2>2. Frameworks</h2>
+                                <blockquote cite="me" style="width: 100%;">
+                                    A CSS framework is a collection of CSS (and sometimes JS) files that make it easier to keep web pages styled consistently.
+                                </blockquote>
                             </div>
                         </div>
                     </section>
@@ -155,376 +119,310 @@
 
                 <section>
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-image">
-                                <img src="http://getbootstrap.com/docs/4.1/assets/brand/bootstrap-social.png" alt="Bootstrap" />
-                            </div>
-                            <div class="card-content">
-                                Bootstrap
-                            </div>
-                        </div>
+                        <h2>Bootstrap</h2>
+                        <img src="http://getbootstrap.com/docs/4.1/assets/brand/bootstrap-social.png" alt="Bootstrap" />
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-image">
-                                <img src="https://bulma.io/images/bulma-banner.png" alt="Bulma" />
-                            </div>
-                            <div class="card-content">
-                                Bulma
-                            </div>
-                        </div>
+                        <h2>Bulma</h2>
+                        <img src="https://bulma.io/images/bulma-banner.png" alt="Bulma" />
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-image">
-                                <img src="https://camo.qiitausercontent.com/7f815936d4171efe73193afad8220864e748ddbc/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f36343637372f38393430383237642d623262322d373134372d343331352d3563613238376634373061382e706e67" alt="Materialize CSS" />
-                            </div>
-                            <div class="card-content">
-                                Materialize CSS
-                            </div>
-                        </div>
+                        <h2>Materialize CSS</h2>
+                        <img src="https://camo.qiitausercontent.com/7f815936d4171efe73193afad8220864e748ddbc/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f36343637372f38393430383237642d623262322d373134372d343331352d3563613238376634373061382e706e67" alt="Materialize CSS" />
                     </section>
                 </section>
                 <!-- /Part 2 -->
 
                 <!-- Part 3; Example -->
                 <section>
-                    <div class="card light z-depth-5">
-                        <div class="card-content">
-                            <table class="table">
-                                <tr class="fragment">
-                                    <td>Small "About Me" website.</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <td>Contains basic details about myself.</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <td>Provides a contact form.</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <td>Has to look nice. <small style="vertical-align: baseline;" class="fragment">(I'm shallow like that)</small></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="card-action">
-                            <p>An Example Website</p>
-                        </div>
+                    <h2>An Example Website</h2>
+                    <div class="fragment">
+                        Small "About Me" website.
+                        <hr />
+                    </div>
+                    <div class="fragment">
+                        Contains basic details about myself.
+                        <hr />
+                    </div>
+                    <div class="fragment">
+                        Provides a contact form.
+                        <hr />
+                    </div>
+                    <div class="fragment">
+                        Has to look nice. <small style="vertical-align: baseline;" class="fragment">(I'm shallow like that)</small>
+                        <hr />
                     </div>
                 </section>
 
                 <section>
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Step 1. HTML only</p>
-                                <pre><code data-trim>
-                                    &lt;!DOCTYPE html&gt;
-                                    &lt;html lang="en"&gt;
-                                        &lt;head&gt;
-                                            &lt;title&gt;All about Ciaran Broderick&lt;/head&gt;
-                                        &lt;/head&gt;
-                                        &lt;body&gt;
-                                            &lt;h1&gt;Ciaran Broderick&lt;/h1&gt;
-                                            &lt;blockquote&gt;"Ciaran Broderick is one of the coolest people you'll ever meet. You should try and hang out with them whenever you can and also give them pizza" - Ciaran's Mom&lt;/blockquote&gt;
-                                            &lt;h2&gt;Education&lt;/h2&gt;
-                                            &lt;ul&gt;
-                                                &lt;li&gt;BSc Computer Science, UCC&lt;/li&gt;
-                                                &lt;li&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
-                                                &lt;li&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
-                                            &lt;/ul&gt;
-                                            &lt;h2&gt;Work Experience&lt;/h2&gt;
-                                            &lt;ul&gt;
-                                                &lt;li&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
-                                                &lt;li&gt;Programmer, in general&lt;/li&gt;
-                                            &lt;/ul&gt;
-                                            &lt;h2&gt;Contact Me&lt;/h2&gt;
-                                            &lt;form&gt;
-                                                &lt;label for="name"&gt;Your Name:&lt;/label&gt;&lt;input type="text" id="name" name="name" /&gt;
-                                                &lt;label for="message"&gt;Message:&lt;/label&gt;&lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
-                                                &lt;input type="submit" /&gt;
-                                            &lt;/form&gt;
-                                        &lt;/body&gt;
-                                    &lt;/html&gt;
-                                </code></pre>
-                                <a href="examples/1.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Step 2. Let's add Bulma</p>
-                                <pre><code data-trim>
-                                    &lt;head&gt;
-                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-                                        &lt;title&gt;All about Ciaran Broderick&lt;/title&gt;
-                                        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"&gt;
-                                    &lt;/head&gt;
-                                </code></pre>
-                                <a href="examples/2.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Step 3. Titles</p>
-                                <pre><code data-trim>
-                                    &lt;h1 class="title"&gt;Ciaran Broderick&lt;/h1&gt;
-                                    ...
-                                    &lt;h2 class="title"&gt;Education&lt;/h2&gt;
-                                    ...
-                                    &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
-                                    ...
-                                    &lt;h2 class="title"&gt;Contact Me&lt;/h2&gt;
-                                    ...
-                                </code></pre>
-                                <a href="examples/3.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Step 4. Container</p>
-                                <pre><code data-trim>
-                                    &lt;body&gt;
-                                        &lt;div class="container"&gt;
-                                            &lt;h1&gt;Ciaran Broderick&lt;/h1&gt;
-                                            ...
-                                        &lt;/div&gt;
-                                    &lt;/body&gt;
-                                </code></pre>
-                                <a href="examples/4.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Step 5. Form</p>
-                                <pre><code data-trim>
+                        <h2>Step 1. HTML only</h2>
+                        <pre><code data-trim>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;All about me!&lt;/head&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;h1&gt;Freya Broderick&lt;/h1&gt;
+                                    &lt;h2&gt;Education&lt;/h2&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;BSc Computer Science, UCC&lt;/li&gt;
+                                        &lt;li&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
+                                        &lt;li&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                    &lt;h2&gt;Work Experience&lt;/h2&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
+                                        &lt;li&gt;Programmer, in general&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                    &lt;h2&gt;Contact Me&lt;/h2&gt;
                                     &lt;form&gt;
-                                        &lt;div class="field"&gt;
-                                            &lt;label class="label" for="name"&gt;Your Name:&lt;/label&gt;
-                                            &lt;div class="control"&gt;
-                                                &lt;input class="input" type="text" id="name" name="name" /&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                        &lt;div class="field"&gt;
-                                            &lt;label class="label" for="message"&gt;Message:&lt;/label&gt;
-                                            &lt;div class="control"&gt;
-                                                &lt;textarea class="textarea" id="message" name="message"&gt;&lt;/textarea&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
-                                        &lt;input class="button is-primary is-pulled-right" type="submit" /&gt;
+                                        &lt;label for="name"&gt;Your Name:&lt;/label&gt;&lt;input type="text" id="name" name="name" /&gt;
+                                        &lt;label for="message"&gt;Message:&lt;/label&gt;&lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+                                        &lt;input type="submit" /&gt;
                                     &lt;/form&gt;
-                                </code></pre>
-                                <a href="examples/5.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code></pre>
+                        <a href="examples/1.html" target="_blank">View</a>
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Step 6. Content</p>
-                                <pre><code data-trim>
-                                    &lt;h1 class="title"&gt;Ciaran Broderick&lt;/h1&gt;
-                                    &lt;div class="content"&gt;
-                                        ...
+                        <h2>Step 2. Let's add Bulma</h2>
+                        <pre><code data-trim>
+                            &lt;head&gt;
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                                &lt;title&gt;All about me!&lt;/title&gt;
+                                &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"&gt;
+                            &lt;/head&gt;
+                        </code></pre>
+                        <a href="examples/2.html" target="_blank">View</a>
+                    </section>
+
+                    <section>
+                        <h2>Step 3. Titles</h2>
+                        <pre><code data-trim>
+                            &lt;h1 class="title"&gt;Freya Broderick&lt;/h1&gt;
+                            ...
+                            &lt;h2 class="title"&gt;Education&lt;/h2&gt;
+                            ...
+                            &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
+                            ...
+                            &lt;h2 class="title"&gt;Contact Me&lt;/h2&gt;
+                            ...
+                        </code></pre>
+                        <a href="examples/3.html" target="_blank">View</a>
+                    </section>
+
+                    <section>
+                        <h2>Step 4. Container</h2>
+                        <pre><code data-trim>
+                            &lt;body&gt;
+                                &lt;div class="container"&gt;
+                                    &lt;h1&gt;Freya Broderick&lt;/h1&gt;
+                                    ...
+                                &lt;/div&gt;
+                            &lt;/body&gt;
+                        </code></pre>
+                        <a href="examples/4.html" target="_blank">View</a>
+                    </section>
+
+                    <section>
+                        <h2>Step 5. Form</h2>
+                        <pre><code data-trim>
+                            &lt;form&gt;
+                                &lt;div class="field"&gt;
+                                    &lt;label class="label" for="name"&gt;Your Name:&lt;/label&gt;
+                                    &lt;div class="control"&gt;
+                                        &lt;input class="input" type="text" id="name" name="name" /&gt;
                                     &lt;/div&gt;
-                                    &lt;h2 class="title"&gt;Education&lt;/h2&gt;
-                                    &lt;div class="content"&gt;
-                                        ...
+                                &lt;/div&gt;
+                                &lt;div class="field"&gt;
+                                    &lt;label class="label" for="message"&gt;Message:&lt;/label&gt;
+                                    &lt;div class="control"&gt;
+                                        &lt;textarea class="textarea" id="message" name="message"&gt;&lt;/textarea&gt;
                                     &lt;/div&gt;
-                                    &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
-                                    &lt;div class="content"&gt;
-                                        ...
-                                    &lt;/div&gt;
-                                </code></pre>
-                                <a href="examples/bulma.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
+                                &lt;/div&gt;
+                                &lt;input class="button is-primary is-pulled-right" type="submit" /&gt;
+                            &lt;/form&gt;
+                        </code></pre>
+                        <a href="examples/5.html" target="_blank">View</a>
+                    </section>
+
+                    <section>
+                        <h2>Step 6. Content</h2>
+                        <pre><code data-trim>
+                            &lt;h1 class="title"&gt;Freya Broderick&lt;/h1&gt;
+                            &lt;div class="content"&gt;
+                                ...
+                            &lt;/div&gt;
+                            &lt;h2 class="title"&gt;Education&lt;/h2&gt;
+                            &lt;div class="content"&gt;
+                                ...
+                            &lt;/div&gt;
+                            &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
+                            &lt;div class="content"&gt;
+                                ...
+                            &lt;/div&gt;
+                        </code></pre>
+                        <a href="examples/bulma.html" target="_blank">View</a>
                     </section>
                 </section>
 
                 <section>
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Bulma</p>
-                                <pre><code data-trim>
-                                    &lt;!DOCTYPE html&gt;
-                                    &lt;html lang="en"&gt;
-                                        &lt;head&gt;
-                                            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-                                            &lt;title&gt;All about Ciaran Broderick&lt;/title&gt;
-                                            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"&gt;
-                                        &lt;/head&gt;
-                                        &lt;body&gt;
-                                            &lt;div class="container"&gt;
-                                                &lt;h1 class="title"&gt;Ciaran Broderick&lt;/h1&gt;
-                                                &lt;div class="content"&gt;
-                                                    &lt;blockquote&gt;"Ciaran Broderick is one of the coolest people you'll ever meet. You should try and hang out with them whenever you can and also give them pizza" - Ciaran's Mom&lt;/blockquote&gt;
+                        <h2>Bulma</h2>
+                        <pre><code data-trim>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                                    &lt;title&gt;All about me!&lt;/title&gt;
+                                    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;div class="container"&gt;
+                                        &lt;h1 class="title"&gt;Freya Broderick&lt;/h1&gt;
+                                        &lt;h2 class="title"&gt;Education&lt;/h2&gt;
+                                        &lt;div class="content"&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;BSc Computer Science, UCC&lt;/li&gt;
+                                                &lt;li&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
+                                                &lt;li&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/div&gt;
+                                        &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
+                                        &lt;div class="content"&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
+                                                &lt;li&gt;Programmer, in general&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/div&gt;
+                                        &lt;h2 class="title"&gt;Contact Me&lt;/h2&gt;
+                                        &lt;form&gt;
+                                            &lt;div class="field"&gt;
+                                                &lt;label class="label" for="name"&gt;Your Name:&lt;/label&gt;
+                                                &lt;div class="control"&gt;
+                                                    &lt;input class="input" type="text" id="name" name="name" /&gt;
                                                 &lt;/div&gt;
-                                                &lt;h2 class="title"&gt;Education&lt;/h2&gt;
-                                                &lt;div class="content"&gt;
-                                                    &lt;ul&gt;
-                                                        &lt;li&gt;BSc Computer Science, UCC&lt;/li&gt;
-                                                        &lt;li&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
-                                                        &lt;li&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/div&gt;
-                                                &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
-                                                &lt;div class="content"&gt;
-                                                    &lt;ul&gt;
-                                                        &lt;li&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
-                                                        &lt;li&gt;Programmer, in general&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/div&gt;
-                                                &lt;h2 class="title"&gt;Contact Me&lt;/h2&gt;
-                                                &lt;form&gt;
-                                                    &lt;div class="field"&gt;
-                                                        &lt;label class="label" for="name"&gt;Your Name:&lt;/label&gt;
-                                                        &lt;div class="control"&gt;
-                                                            &lt;input class="input" type="text" id="name" name="name" /&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                    &lt;div class="field"&gt;
-                                                        &lt;label class="label" for="message"&gt;Message:&lt;/label&gt;
-                                                        &lt;div class="control"&gt;
-                                                            &lt;textarea class="textarea" id="message" name="message"&gt;&lt;/textarea&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                    &lt;input class="button is-primary is-pulled-right" type="submit" /&gt;
-                                                &lt;/form&gt;
                                             &lt;/div&gt;
-                                        &lt;/body&gt;
-                                    &lt;/html&gt;
-                                </code></pre>
-                                <a href="examples/bulma.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
+                                            &lt;div class="field"&gt;
+                                                &lt;label class="label" for="message"&gt;Message:&lt;/label&gt;
+                                                &lt;div class="control"&gt;
+                                                    &lt;textarea class="textarea" id="message" name="message"&gt;&lt;/textarea&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;input class="button is-primary is-pulled-right" type="submit" /&gt;
+                                        &lt;/form&gt;
+                                    &lt;/div&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code></pre>
+                        <a href="examples/bulma.html" target="_blank">View</a>
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Bootstrap</p>
-                                <pre><code data-trim>
-                                    &lt;!DOCTYPE html&gt;
-                                    &lt;html lang="en"&gt;
-                                        &lt;head&gt;
-                                            &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-                                            &lt;title&gt;All about Ciaran Broderick&lt;/title&gt;
-                                            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"&gt;
-                                        &lt;/head&gt;
-                                        &lt;body&gt;
-                                            &lt;div class="container"&gt;
-                                                &lt;h1 class="title"&gt;Ciaran Broderick&lt;/h1&gt;
-                                                &lt;div class="content"&gt;
-                                                    &lt;blockquote&gt;"Ciaran Broderick is one of the coolest people you'll ever meet. You should try and hang out with them whenever you can and also give them pizza" - Ciaran's Mom&lt;/blockquote&gt;
+                        <h2>Bootstrap</h2>
+                        <pre><code data-trim>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                                    &lt;title&gt;All about me!&lt;/title&gt;
+                                    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;div class="container"&gt;
+                                        &lt;h1 class="title"&gt;Freya Broderick&lt;/h1&gt;
+                                        &lt;h2 class="title"&gt;Education&lt;/h2&gt;
+                                        &lt;div class="content"&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;BSc Computer Science, UCC&lt;/li&gt;
+                                                &lt;li&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
+                                                &lt;li&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/div&gt;
+                                        &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
+                                        &lt;div class="content"&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
+                                                &lt;li&gt;Programmer, in general&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/div&gt;
+                                        &lt;h2 class="title"&gt;Contact Me&lt;/h2&gt;
+                                        &lt;form&gt;
+                                            &lt;div class="field"&gt;
+                                                &lt;label class="label" for="name"&gt;Your Name:&lt;/label&gt;
+                                                &lt;div class="control"&gt;
+                                                    &lt;input class="input" type="text" id="name" name="name" /&gt;
                                                 &lt;/div&gt;
-                                                &lt;h2 class="title"&gt;Education&lt;/h2&gt;
-                                                &lt;div class="content"&gt;
-                                                    &lt;ul&gt;
-                                                        &lt;li&gt;BSc Computer Science, UCC&lt;/li&gt;
-                                                        &lt;li&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
-                                                        &lt;li&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/div&gt;
-                                                &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
-                                                &lt;div class="content"&gt;
-                                                    &lt;ul&gt;
-                                                        &lt;li&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
-                                                        &lt;li&gt;Programmer, in general&lt;/li&gt;
-                                                    &lt;/ul&gt;
-                                                &lt;/div&gt;
-                                                &lt;h2 class="title"&gt;Contact Me&lt;/h2&gt;
-                                                &lt;form&gt;
-                                                    &lt;div class="field"&gt;
-                                                        &lt;label class="label" for="name"&gt;Your Name:&lt;/label&gt;
-                                                        &lt;div class="control"&gt;
-                                                            &lt;input class="input" type="text" id="name" name="name" /&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                    &lt;div class="field"&gt;
-                                                        &lt;label class="label" for="message"&gt;Message:&lt;/label&gt;
-                                                        &lt;div class="control"&gt;
-                                                            &lt;textarea class="textarea" id="message" name="message"&gt;&lt;/textarea&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                    &lt;input class="button is-primary is-pulled-right" type="submit" /&gt;
-                                                &lt;/form&gt;
                                             &lt;/div&gt;
-                                        &lt;/body&gt;
-                                    &lt;/html&gt;
-                                </code></pre>
-                                <a href="examples/bootstrap.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
+                                            &lt;div class="field"&gt;
+                                                &lt;label class="label" for="message"&gt;Message:&lt;/label&gt;
+                                                &lt;div class="control"&gt;
+                                                    &lt;textarea class="textarea" id="message" name="message"&gt;&lt;/textarea&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;input class="button is-primary is-pulled-right" type="submit" /&gt;
+                                        &lt;/form&gt;
+                                    &lt;/div&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code></pre>
+                        <a href="examples/bootstrap.html" target="_blank">View</a>
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Materialize CSS</p>
-                                <pre><code data-trim>
-                                    &lt;!DOCTYPE html&gt;
-                                    &lt;html lang="en"&gt;
-                                        &lt;head&gt;
-                                            &lt;title&gt;All about Ciaran Broderick (Materialize)&lt;/title&gt;
-                                            &lt;!--Import Google Icon Font--&gt;
-                                            &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
-                                            &lt;!--Import materialize.css--&gt;
-                                            &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"&gt;
+                        <h2>Materialize CSS</h2>
+                        <pre><code data-trim>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;All about me! (Materialize)&lt;/title&gt;
+                                    &lt;!--Import Google Icon Font--&gt;
+                                    &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+                                    &lt;!--Import materialize.css--&gt;
+                                    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"&gt;
 
-                                            &lt;!--Let browser know website is optimized for mobile--&gt;
-                                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
-                                        &lt;/head&gt;
-                                        &lt;body&gt;
-                                            &lt;div class="container"&gt;
-                                                &lt;h1&gt;Ciaran Broderick&lt;/h1&gt;
-                                                &lt;blockquote&gt;"Ciaran Broderick is one of the coolest people you'll ever meet. You should try and hang out with them whenever you can and also give them pizza" - Ciaran's Mom&lt;/blockquote&gt;
-                                                &lt;h2&gt;Education&lt;/h2&gt;
-                                                &lt;ul class="collection"&gt;
-                                                    &lt;li class="collection-item"&gt;BSc Computer Science, UCC&lt;/li&gt;
-                                                    &lt;li class="collection-item"&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
-                                                    &lt;li class="collection-item"&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
-                                                &lt;/ul&gt;
-                                                &lt;h2&gt;Work Experience&lt;/h2&gt;
-                                                &lt;ul class="collection"&gt;
-                                                    &lt;li class="collection-item"&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
-                                                    &lt;li class="collection-item"&gt;Programmer, in general&lt;/li&gt;
-                                                &lt;/ul&gt;
-                                                &lt;h2&gt;Contact Me&lt;/h2&gt;
-                                                &lt;form&gt;
-                                                    &lt;div class="input-field"&gt;
-                                                        &lt;input type="text" id="name" name="name" /&gt;
-                                                        &lt;label for="name"&gt;Your Name&lt;/label&gt;
-                                                    &lt;/div&gt;
-                                                    &lt;div class="input-field"&gt;
-                                                        &lt;textarea class="materialize-textarea" id="message" name="message"&gt;&lt;/textarea&gt;
-                                                        &lt;label for="message"&gt;Message&lt;/label&gt;
-                                                    &lt;/div&gt;
-                                                    &lt;input class="btn teal lighten-1 right" type="submit" /&gt;
-                                                &lt;/form&gt;
+                                    &lt;!--Let browser know website is optimized for mobile--&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;div class="container"&gt;
+                                        &lt;h1&gt;Freya Broderick&lt;/h1&gt;
+                                        &lt;h2&gt;Education&lt;/h2&gt;
+                                        &lt;ul class="collection"&gt;
+                                            &lt;li class="collection-item"&gt;BSc Computer Science, UCC&lt;/li&gt;
+                                            &lt;li class="collection-item"&gt;MSc in Pizza, School of NetSoc&lt;/li&gt;
+                                            &lt;li class="collection-item"&gt;PhD in Giving Hugs, School of Life&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                        &lt;h2&gt;Work Experience&lt;/h2&gt;
+                                        &lt;ul class="collection"&gt;
+                                            &lt;li class="collection-item"&gt;SysAdmin, UCC NetSoc&lt;/li&gt;
+                                            &lt;li class="collection-item"&gt;Programmer, in general&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                        &lt;h2&gt;Contact Me&lt;/h2&gt;
+                                        &lt;form&gt;
+                                            &lt;div class="input-field"&gt;
+                                                &lt;input type="text" id="name" name="name" /&gt;
+                                                &lt;label for="name"&gt;Your Name&lt;/label&gt;
                                             &lt;/div&gt;
-                                            &lt;!--JavaScript at end of body for optimized loading--&gt;
-                                            &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"&gt;&lt;/script&gt;
-                                        &lt;/body&gt;
-                                    &lt;/html&gt;
-                                </code></pre>
-                                <a href="examples/materialize.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
+                                            &lt;div class="input-field"&gt;
+                                                &lt;textarea class="materialize-textarea" id="message" name="message"&gt;&lt;/textarea&gt;
+                                                &lt;label for="message"&gt;Message&lt;/label&gt;
+                                            &lt;/div&gt;
+                                            &lt;input class="btn teal lighten-1 right" type="submit" /&gt;
+                                        &lt;/form&gt;
+                                    &lt;/div&gt;
+                                    &lt;!--JavaScript at end of body for optimized loading--&gt;
+                                    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"&gt;&lt;/script&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code></pre>
+                        <a href="examples/materialize.html" target="_blank">View</a>
                     </section>
                 </section>
                 <!-- /Example -->
@@ -532,74 +430,61 @@
                 <!-- Extras -->
                 <section>
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>X1. Grid System</p>
-                                <hr />
-                                <p class="fragment">Most, if not all, CSS Frameworks come with a row and column based grid system.</p>
-                                <p class="fragment">Using this, you can create responsive layouts that take up x/12 of the width allowed at all times.</p>
-                            </div>
+                        <h2>X1. Grid System</h2>
+                        <div class="fragment">
+                            Most, if not all, CSS Frameworks come with a row and column based grid system.
+                            <hr />
+                        </div>
+                        <div class="fragment">
+                            Using this, you can create responsive layouts that take up x/12 of the width allowed at all times.
+                            <hr />
                         </div>
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-image">
-                                <img src="https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1518242896/toi3jwvoox0pvztukcrl.png" alt="Bulma.io Grid System" />
-                            </div>
-                            <div class="card-content">
-                                X1. Grid System
-                            </div>
-                        </div>
+                        <h2>X1. Grid System</h2>
+                        <img src="https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1518242896/toi3jwvoox0pvztukcrl.png" alt="Bulma.io Grid System" />
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>X1. Grid System</p>
-                                <pre><code data-trim>
-                                    &lt;div class="container"&gt;
-                                        ...
-                                        &lt;div class="columns"&gt;
-                                            &lt;div class="column is-5"&gt;
-                                                &lt;h2 class="title"&gt;Education&lt;/h2&gt;
-                                                ...
-                                            &lt;/div&gt;
-                                            &lt;div class="column is-7"&gt;
-                                                &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
-                                                ...
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
+                        <h2>X1. Grid System</h2>
+                        <pre><code data-trim>
+                            &lt;div class="container"&gt;
+                                ...
+                                &lt;div class="columns"&gt;
+                                    &lt;div class="column is-5"&gt;
+                                        &lt;h2 class="title"&gt;Education&lt;/h2&gt;
                                         ...
                                     &lt;/div&gt;
-                                </code></pre>
-                                <a href="examples/bulma-grid.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
+                                    &lt;div class="column is-7"&gt;
+                                        &lt;h2 class="title"&gt;Work Experience&lt;/h2&gt;
+                                        ...
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                ...
+                            &lt;/div&gt;
+                        </code></pre>
+                        <a href="examples/bulma-grid.html" target="_blank">View</a>
                     </section>
                 </section>
 
                 <section>
-                    <div class="card light z-depth-5">
-                        <div class="card-content">
-                            <table class="table">
-                                <tr class="fragment">
-                                    <td>Alerts / Notifications</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <td>Cards / Panels</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <td>Navbars / Tabs</td>
-                                </tr>
-                                <tr class="fragment">
-                                    <td>And More!</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="card-action">
-                            <p>Other Things You Can (Typically) Expect</p>
-                        </div>
+                    <h2>Other Things You Can Expect</h2>
+                    <div class="fragment">
+                        Alerts / Notifications
+                        <hr />
+                    </div>
+                    <div class="fragment">
+                        Cards / Panels
+                        <hr />
+                    </div>
+                    <div class="fragment">
+                        Navbars / Tabs
+                        <hr />
+                    </div>
+                    <div class="fragment">
+                        And More!
+                        <hr />
                     </div>
                 </section>
                 <!-- /Extras -->
@@ -607,284 +492,221 @@
                 <!-- SCSS -->
                 <section>
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>4. ????</p>
-                                <hr />
-                                <blockquote class="fragment">Isn't this all a hell of a lot of work for people?</blockquote>
-                            </div>
-                        </div>
+                        <h2>4. ????</h2>
+                        <blockquote class="fragment" style="width: 100%;">Isn't this all a hell of a lot of work for people?</blockquote>
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>4. CSS Preprocessors</p>
-                                <hr />
-                                <p>Well what if we could do programming stuff in CSS?</p>
-                            </div>
-                        </div>
+                        <h2>4. CSS Preprocessors</h2>
+                        <p>Well what if we could do programming stuff in CSS?</p>
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>4. CSS Preprocessors</p>
-                                <div class="row">
-                                    <img src="https://cdn-images-1.medium.com/max/1600/1*gug9RW82pyTaW6kgY_Mvtw.png" alt="Sass CSS Logo" />
-                                </div>
-                            </div>
+                        <h2>4. CSS Preprocessors</h2>
+                        <img src="https://cdn-images-1.medium.com/max/1600/1*gug9RW82pyTaW6kgY_Mvtw.png" alt="Sass CSS Logo" />
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>4. Sass</h2>
+                        <p class="fragment">Syntactically Awesome Style Sheets</p>
+                        <blockquote class="fragment" style="width: 100%;">
+                            Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+                        </blockquote>
+                    </section>
+
+                    <section>
+                        <h2>What Can It Do?</h2>
+                        <div class="fragment">
+                            <strong>Variables:</strong>
+                            <code><var>$color</var>: #002366;</code>
+                            <hr />
+                        </div>
+                        <div class="fragment">
+                            <strong>Imports:</strong>
+                            <code>@import "other";</code>
+                            <hr />
+                        </div>
+                        <div class="fragment">
+                            <strong>Maths:</strong>
+                            <code><var>width</var>: 600px/960px * 100%;</code>
+                            <hr />
+                        </div>
+                        <div class="fragment">
+                            <strong>More:</strong>
+                            Arrays, Dictionaries, Loops, Nesting
+                            <hr />
                         </div>
                     </section>
                 </section>
 
                 <section>
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>4. Sass</p>
-                                <hr />
-                                <p class="fragment">Syntactically Awesome Style Sheets</p>
-                                <blockquote class="fragment">Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</blockquote>
-                            </div>
-                        </div>
+                        <h2>Let's Make A Rainbow; HTML</h2>
+                        <pre><code data-trim>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang="en"&gt;
+                                &lt;head&gt;
+                                    &lt;title&gt;A Sassy Rainbow&lt;/title&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;div class="stripe is-red"&gt;&lt;/div&gt;
+                                    &lt;div class="stripe is-orange"&gt;&lt;/div&gt;
+                                    &lt;div class="stripe is-yellow"&gt;&lt;/div&gt;
+                                    &lt;div class="stripe is-green"&gt;&lt;/div&gt;
+                                    &lt;div class="stripe is-blue"&gt;&lt;/div&gt;
+                                    &lt;div class="stripe is-indigo"&gt;&lt;/div&gt;
+                                    &lt;div class="stripe is-violet"&gt;&lt;/div&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code></pre>
                     </section>
 
                     <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <table class="table">
-                                    <tr class="fragment">
-                                        <th>Variables</th>
-                                        <td><code><var>$color</var>: #002366;</code></td>
-                                    </tr>
-                                    <tr class="fragment">
-                                        <th>Imports</th>
-                                        <td><code>@import "other";</code></td>
-                                    </tr>
-                                    <tr class="fragment">
-                                        <th>Maths</th>
-                                        <td><code><var>width</var>: 600px/960px * 100%;</code></td>
-                                    </tr>
-                                    <tr class="fragment">
-                                        <th>More</th>
-                                        <td>Arrays, Dictionaries, Loops, Nesting</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="card-action">
-                                <p>What Can It Do?</p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
+                        <h2>Let's Make A Rainbow; SCSS</h2>
+                        <pre><code data-trim data-lang="scss">
+                            // Normal CSS Works here too
+                            * {
+                                margin: 0;
+                                padding: 0;
+                            }
 
-                <section>
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Let's Make A Rainbow; HTML</p>
-                                <pre><code data-trim>
-                                    &lt;!DOCTYPE html&gt;
-                                    &lt;html lang="en"&gt;
-                                        &lt;head&gt;
-                                            &lt;title&gt;A Sassy Rainbow&lt;/title&gt;
-                                        &lt;/head&gt;
-                                        &lt;body&gt;
-                                            &lt;div class="stripe is-red"&gt;&lt;/div&gt;
-                                            &lt;div class="stripe is-orange"&gt;&lt;/div&gt;
-                                            &lt;div class="stripe is-yellow"&gt;&lt;/div&gt;
-                                            &lt;div class="stripe is-green"&gt;&lt;/div&gt;
-                                            &lt;div class="stripe is-blue"&gt;&lt;/div&gt;
-                                            &lt;div class="stripe is-indigo"&gt;&lt;/div&gt;
-                                            &lt;div class="stripe is-violet"&gt;&lt;/div&gt;
-                                        &lt;/body&gt;
-                                    &lt;/html&gt;
-                                </code></pre>
-                            </div>
-                        </div>
-                    </section>
+                            // Define the colours in a map
+                            $stripes: (
+                                "red": #F00,
+                                "orange": #FF7F00,
+                                "yellow": #FF0,
+                                "green": #0F0,
+                                "blue": #00F,
+                                "indigo": #4B0082,
+                                "violet": #9400D3,
+                            );
 
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Let's Make A Rainbow; SCSS</p>
-                                <pre><code data-trim>
-                                    // Normal CSS Works here too
-                                    * {
-                                        margin: 0;
-                                        padding: 0;
-                                    }
+                            // Define the colour bands
+                            .stripe {
+                                height: calc(100vh / 7);
+                                text-align: center;
 
-                                    // Define the colours in a map
-                                    $stripes: (
-                                        "red": #F00,
-                                        "orange": #FF7F00,
-                                        "yellow": #FF0,
-                                        "green": #0F0,
-                                        "blue": #00F,
-                                        "indigo": #4B0082,
-                                        "violet": #9400D3,
-                                    );
+                                p {
+                                    color: white;
+                                }
 
-                                    // Define the colour bands
-                                    .stripe {
-                                        height: calc(100vh / 7);
-                                        text-align: center;
-
-                                        p {
-                                            color: white;
-                                        }
-
-                                        // For loop for defining the colour schemes
-                                        @each $name, $color in $stripes {
-                                            &.is-#{$name} {
-                                                background-color: #{$color};
-                                            }
-                                        }
-                                    }
-                                </code></pre>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-                <section>
-                    <div class="card light z-depth-5">
-                        <div class="card-content">
-                            <p>Let's Break It Down; Maps</p>
-                            <pre><code data-trim>
-                                // Define the colours in a map
-                                $stripes: (
-                                    "red": #F00,
-                                    "orange": #FF7F00,
-                                    "yellow": #FF0,
-                                    "green": #0F0,
-                                    "blue": #00F,
-                                    "indigo": #4B0082,
-                                    "violet": #9400D3,
-                                );
-                            </code></pre>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Let's Break It Down; Nesting</p>
-                                <pre><code data-trim>
-                                    // Define the colour bands
-                                    .stripe {
-                                        height: calc(100vh / 7);
-                                        text-align: center;
-
-                                        p {
-                                            color: white;
-                                        }
-                                    }
-                                </code></pre>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Let's Break It Down; Nesting</p>
-                                <pre><code data-trim>
-                                    .stripe {
-                                        height: calc(100vh / 7);
-                                        text-align: center;
-                                    }
-
-                                    .stripe p {
-                                        color: white;
-                                    }
-                                </code></pre>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-                <section>
-                    <div class="card light z-depth-5">
-                        <div class="card-content">
-                            <p>Let's Break It Down; Loop</p>
-                            <pre><code data-trim>
-                                // Define the colour bands
-                                .stripe {
-                                    ...
-                                    // For loop for defining the colour schemes
-                                    @each $name, $color in $stripes {
-                                        &.is-#{$name} {
-                                            background-color: #{$color};
-                                        }
+                                // For loop for defining the colour schemes
+                                @each $name, $color in $stripes {
+                                    &.is-#{$name} {
+                                        background-color: #{$color};
                                     }
                                 }
-                            </code></pre>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Putting it all together</p>
-                                <pre><code data-trim>
-                                    # Install Sass
-                                    gem install sass             # Ruby
-                                    npm install -g sass          # JS
-                                    brew install sass/sass/sass  # Dart
-
-                                    # Compile the SCSS into CSS
-                                    sass rainbow.scss rainbow.css
-                                </code></pre>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="card light z-depth-5">
-                            <div class="card-content">
-                                <p>Putting it all together</p>
-                                <pre><code data-trim>
-                                    &lt;head&gt;
-                                        &lt;title&gt;A Sassy Rainbow&lt;/title&gt;
-                                        &lt;link href="rainbow.css" rel="stylesheet" /&gt;
-                                    &lt;/head&gt;
-                                </code></pre>
-                                <a href="examples/scss/rainbow.html" target="_blank"><i class="material-icons">remove_red_eye</i></a>
-                            </div>
-                        </div>
+                            }
+                        </code></pre>
                     </section>
                 </section>
 
                 <section>
-                    <div class="card light z-depth-5">
-                        <div class="card-content">
-                            What are your questions?
-                            <pre><code data-trim>
-                                your_questions.each do |question|
-                                  self.answer question
-                                end
-                            </code></pre>
-                        </div>
-                    </div>
+                    <h2>Let's Break It Down; Maps</h2>
+                    <pre><code data-trim data-lang="scss">
+                        // Define the colours in a map
+                        $stripes: (
+                            "red": #F00,
+                            "orange": #FF7F00,
+                            "yellow": #FF0,
+                            "green": #0F0,
+                            "blue": #00F,
+                            "indigo": #4B0082,
+                            "violet": #9400D3,
+                        );
+                    </code></pre>
                 </section>
 
                 <section>
-                    <div class="card light z-depth-5">
-                        <div class="card-image">
-                            <img src="https://coffeeconnectionhilliard.files.wordpress.com/2016/05/thank-you-1400x800-c-default.gif" alt="Thanks for listening" />
-                        </div>
-                        <div class="card-content">
-                            <p>crnlpanic.netsoc.co/techtalks/css</p>
-                            <p>github.com/crnbrdrck/netsoc-css-talk</p>
-                        </div>
-                    </div>
+                    <section>
+                        <h2>Let's Break It Down; Nesting</h2>
+                        <pre><code data-trim data-lang="scss">
+                            // Define the colour bands
+                            .stripe {
+                                height: calc(100vh / 7);
+                                text-align: center;
+
+                                p {
+                                    color: white;
+                                }
+                            }
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Let's Break It Down; Nesting</h2>
+                        <pre><code data-trim data-lang="scss">
+                            .stripe {
+                                height: calc(100vh / 7);
+                                text-align: center;
+                            }
+
+                            .stripe p {
+                                color: white;
+                            }
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Let's Break It Down; Loops</h2>
+                    <pre><code data-trim data-lang="scss">
+                        // Define the colour bands
+                        .stripe {
+                            ...
+                            // For loop for defining the colour schemes
+                            @each $name, $color in $stripes {
+                                &.is-#{$name} {
+                                    background-color: #{$color};
+                                }
+                            }
+                        }
+                    </code></pre>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Putting it all together</h2>
+                        <pre><code data-trim>
+                            # Install Sass
+                            gem install sass             # Ruby
+                            npm install -g sass          # JS
+                            brew install sass/sass/sass  # Dart
+
+                            # Compile the SCSS into CSS
+                            sass rainbow.scss rainbow.css
+                        </code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Putting it all together</h2>
+                        <pre><code data-trim>
+                            &lt;head&gt;
+                                &lt;title&gt;A Sassy Rainbow&lt;/title&gt;
+                                &lt;link href="rainbow.css" rel="stylesheet" /&gt;
+                            &lt;/head&gt;
+                        </code></pre>
+                        <a href="examples/scss/rainbow.html" target="_blank">View</a>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>What are your questions?</h2>
+                    <pre><code data-trim data-lang="ruby">
+                        your_questions.each do |question|
+                          self.answer question
+                        end
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h1>Thank you!</h1>
+                    <br />
+                    <h3>Slides:</h3> <a href="http://freyamade.netsoc.co/techtalks/css" target="_blank">freyamade.netsoc.co/techtalks/css</a>
+                    <br />
+                    <h3>Code:</h3> <a href="https://github.com/freyamade/netsoc-css-talk" target="_blank">freyamade/netsoc-css-talk</a>
                 </section>
             </div>
         </div>

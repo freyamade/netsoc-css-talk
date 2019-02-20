@@ -1,6 +1,6 @@
 # CSS
 
-![title slide](https://raw.githubusercontent.com/crnbrdrck/netsoc-css-talk/master/title.png)
+![title slide](https://raw.githubusercontent.com/freyamade/netsoc-css-talk/master/title.png)
 
 Cascading Style Sheets (CSS) are a way of styling your HTML to make your website look nice af.
 But with such a large emphasis on terms like "mobile-first", CSS can be a tedious job.

@@ -1,18 +1,19 @@
 {
   "name": "netsoc-css-talk",
   "version": "2.0.0",
-  "description": "Showing people how easy CSS can be when other people do all of the work for you.",
-  "homepage": "http://crnlpanic.netsoc.co/techtalks/css",
+  "description": "netsoc css talk 2018",
+  "homepage": "http://freyamade.netsoc.co/techtalks/css",
   "scripts": {
     "build": "node-sass css/scss/theme.scss css/theme.css"
   },
   "author": {
-    "name": "Ciaran Broderick",
-    "web": "http://crnbrdrck.xyz"
+    "name": "freyamade",
+    "web": "http://freyamade.netsoc.co"
   },
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/crnbrdrck/netsoc-css-talk.git"
+    "url": "git://github.com/freyamade/netsoc-css-talk.git"
   },
   "devDependencies": {
     "node-sass": "^4.9.3"
