@@ -1,6 +1,6 @@
 /**
- * crnbrdrck theme for reveal.js
- * Author: crnbrdrck
+ * freyamade theme for reveal.js
+ * Author: freyamade
  */
 
  // Include theme-specific fonts
@@ -8,58 +8,34 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic");
 
 // Default mixins and settings -----------------
-@import "./mixins";
 @import "./settings";
 // ---------------------------------------------
 
-.card-content {
-  color: $headingColor;
-}
-
-.reveal section .card .card-image img {
-  max-height: 100%;
-  max-width: 100%;
-  border: 0;
-  margin: 0;
-  box-shadow: 0 0 0 0;
-}
-
 .reveal pre code {
   font-family: "Ubuntu Mono", sans-serif;
-}
-
-.reveal a.btn-flat {
-  font: 15px 'Montserrat', sans-serif;
 }
 
 .reveal .controls .navigate-left {
   right: 74px;
 }
 
-.card.light {
-    background-color: $mainColor !important;
-    color: $backgroundColor !important;
-}
-
-.card.dark {
-    color: $mainColor !important;
-    background-color: $backgroundColor !important;
-    & .card-content {
-        color: $mainColor !important;
-    }
-    & ::selection {
-        color: $selectionBackgroundColor;
-        background: $selectionColor;
-        text-shadow: none;
-    }
-
-    & ::-moz-selection {
-        color: $selectionBackgroundColor;
-        background: $selectionColor;
-        text-shadow: none;
-    }
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #0046cc, #ff206e);
+    border-image-slice: 1;
+    display: inline-block;
 }
 
 // Theme template ------------------------------
 @import "./base-theme";
 // ---------------------------------------------
+
+// Override some stuff in the base theme
+.reveal .progress span, .reveal hr {
+  background-image: linear-gradient(to right, #0046cc, #ff206e);
+}
+
+.reveal hr {
+    border: 0;
+    height: 1px;
+}
