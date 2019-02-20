@@ -2,12 +2,12 @@
 // overridden by the super-theme
 
 // Background of the presentation
-$backgroundColor: #002366;
+$backgroundColor: #18191c;
 
 // Primary/body text
 $mainFont: 'Montserrat';
 $mainFontSize: 40px;
-$mainColor: #d4def6;
+$mainColor: white;
 
 // Vertical spacing between blocks of text
 $blockMargin: 20px;
@@ -15,26 +15,26 @@ $blockMargin: 20px;
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'Montserrat';
-$headingColor: #002366;
+$headingColor: white;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: inherit;
 $headingTextShadow: none;
 $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 3.77em;
-$heading2Size: 2.11em;
-$heading3Size: 1.55em;
+$heading1Size: 2em;
+$heading2Size: 1.5em;
+$heading3Size: 1.25em;
 $heading4Size: 1.00em;
 
 // Links and actions
-$linkColor: #6A81AE;
-$linkColorHover: darken( $linkColor, 20% );
+$linkColor: #0044cc;
+$linkColorHover: #80329D;
 
 // Text selection
-$selectionBackgroundColor: #6A81AE;
-$selectionColor: #002366;
+$selectionBackgroundColor: transparent;
+$selectionColor: #ff206e;
 
 // Generates the presentation background, can be overridden
 // to return a background image or gradient
